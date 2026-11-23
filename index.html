@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <link rel="stylesheet" href="recuerdito.css">
+</head>
+<body>
+
+    <header class="barra-superior">
+        <p id="nombre-pagina-barra">RECUERDITO</p>
+    </header>
+
+    <div class="layout-principal">
+        <div id="div-1">
+            <div class="usuario">
+                <img src="descarga.jpg" alt="Usuario" class="usuarioimg">
+                <p>Usuario</p>
+            </div>
+            <br>
+            <input type="text" id="buscador" name="buscador" placeholder="Buscar tarea...">
+            <br>
+            <br>
+            <button id="btn-anadir-vista" style="width: 180px; height: 35px;">+ Añadir tarea</button>
+            <br><br>
+            <button id="btn-bandeja" style="width: 180px; height: 35px;">Bandeja de entrada</button>
+            <br><br>
+            <button id="btn-hoy" style="width: 180px; height: 35px;">Hoy</button>
+            <br><br>
+            <button id="btn-completadas" style="width: 180px; height: 35px;">Completadas</button>
+        </div>
+
+        <div class="contenedor">
+            <div id="div-3">
+                <h2>Bandeja de entrada</h2>
+                <p>Agregar tarea (la fecha es opcional)</p>
+                <input type="text" id="lista-tarea" name="tarea" placeholder="Ej. Repasar apuntes...">
+                <input type="date" id="fecha-tarea" name="fecha">
+                <button type="button" id="limpiar-fecha" title="Quitar fecha">×</button>
+                <button id="guardar">Agregar tarea</button>
+                <ul id="tareas-guardadas"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="recuerdito.js"></script>
+</body>
+</html>
