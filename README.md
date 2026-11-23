@@ -1,2 +1,0 @@
-# Recuerdito
-Recurda tus tareitas
